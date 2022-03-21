@@ -1005,3 +1005,30 @@ button.icon-button > span.chevron-arrow-right {
         font-size: 14px;
     }
 }
+
+
+.Login input[type="submit"]
+{
+
+  border: none;
+  outline:none;
+  height: 40px;
+  background: #2b2b2b;
+  color:#fff;
+  font-size: 18px;
+  border-radius: 20px;
+  margin-left: 1300px;
+  margin-top: 50px;  
+
+
+
+
+}
+
+
+
+
+
+
+
+
