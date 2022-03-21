@@ -205,8 +205,9 @@ th[colspan="7"]::after {
             transform: translateX(-50%);
     background-color: rgba(135, 115, 193, 0.15);
 }
-tr.calendar-header {
-
+tr .calendar-header {
+    -webkit-box-shadow: 5px 0 18px -3px rgba(0, 0, 0, 0.15);
+            box-shadow: 5px 0 18px -3px rgba(0, 0, 0, 0.15);
 }
         /* tr.calendar-header .calendar-header-day 
             veranderd de dagen 
@@ -218,7 +219,9 @@ tr.calendar-header .calendar-header-day {
     color: #2b2b2b;
 }
 
-tr.calendar-body {
+tr .calendar-body {
+    -webkit-box-shadow: 5px 0 18px -3px rgba(0, 0, 0, 0.15);
+    box-shadow: 5px 0 18px -3px rgba(0, 0, 0, 0.15);
 
 }
 tr.calendar-body .calendar-day {
