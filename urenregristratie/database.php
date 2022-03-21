@@ -1,9 +1,9 @@
 <?php
 
-$host = 'localhost';
-$dbname = 'urenregristratie';
-$user = 'root';
-$pass = '';
+$host = 'localhost'; //host naam
+$dbname = 'urenregristratie'; //database naam
+$user = 'root';//account dat gebruikt moet worden
+$pass = '';//wachtwoord dat bij het account hoort
  // hier maak ik de database connectie door middel van pdo
 try {
     $connection = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass); 
