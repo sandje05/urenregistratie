@@ -1,0 +1,49 @@
+body{
+padding: 0;
+margin: 0;
+}
+
+.topbar {
+ height:100vh;
+ width:15%;
+ background-color:#2b2b2b;
+ display: flex;
+ flex-direction: column;
+ gap: 10px 30px;
+}
+
+.Logo{ 
+left: calc(20% - 9px);
+max-width: 60%;
+bottom: 90%;
+margin-top: 10px;
+} 
+
+.link{
+display: flex;
+order: 4;
+font-size: 20px;
+}
+
+.home{
+margin-bottom: 30px;
+
+}
+
+.news{
+margin-bottom: 30px;
+
+
+}
+
+.contact{
+margin-bottom: 30px;
+
+
+}
+
+.about{
+margin-bottom: 30px;
+
+
+}
