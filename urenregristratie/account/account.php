@@ -1,3 +1,9 @@
+<?php 
+include '../database.php' 
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,8 +14,9 @@
   <title>Creat an account</title>
   <link rel="stylesheet" href="account.css">
 </head>
+
 <body>
-  
+
   <div>
 <img src="IMG/Background-Mac.jpg" class="background">
   </div>
@@ -58,7 +65,7 @@
     <input type="password" name="paswordcheck" placeholder="Re-Enter Password" required>
     <input type="submit" name="" value="Create">
     <!--<a href="#">Forgot your password?</a><br>-->
-    <a href="../login/index.html">Already have an account?</a>
+    <a href="../login/index.php">Already have an account?</a>
 
 
     
@@ -75,4 +82,12 @@
 
 </body>
 </html>
+© 2022 GitHub, Inc.
+Terms
+Privacy
+<?php
 
+
+
+
+?>

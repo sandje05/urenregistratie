@@ -1,3 +1,9 @@
+<?php 
+include '../database.php' 
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +32,7 @@
     <input type="Password" name="" placeholder="Enter Password">
     <input type="submit" name="" value="Login">
     <!--<a href="#">Forgot your password?</a><br>-->
-    <a href="../account/account.html">Don't have an account?</a>
+    <a href="../account/account.php">Don't have an account?</a>
 
   </form>
   </div>
