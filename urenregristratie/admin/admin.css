@@ -2,10 +2,12 @@ body{
 padding: 0;
 margin: 0;
 }
+
+
 /*hier maak ik de grijse sidebar */
 .topbar {
  height:100vh;
- width:15%;
+ width:200px;
  background-color:#2b2b2b;
  display: flex;
  flex-direction: column;
@@ -22,11 +24,14 @@ margin-left: 15%;
 .link{
 display: flex;
 order: 4;
-font-size: 20px;
+font-size: 18px;
 }
 
 ul{
 color: white;
+list-style: none;
+padding:0;
+padding-left: 25px;
 }
 
 .agenda{
@@ -38,13 +43,12 @@ a{
     text-decoration: none;
     color: white;
     font-family: sans-serif;
-
+    
 }
 
 p{
 font-family: sans-serif;
-display: flex;
-flex-direction: column;
+
 }
 
 .text{
@@ -53,8 +57,8 @@ top: 10%;
 margin-left: 20%;
 text-align: left;
 font-family: sans-serif;
-font-size: 25px;
-display: flex;
+font-size: auto;
+
 
 
 }
@@ -63,5 +67,15 @@ position: fixed;
 top: 1%;
 margin-left: 20%;
 text-align: left;
-font-size: 42px;
+font-size: 35px;
 }
+
+.space{
+    color: white;
+}
+/* 
+.bg
+{
+height: 120vh;
+
+} */
