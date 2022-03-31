@@ -1016,10 +1016,19 @@ button.icon-button > span.chevron-arrow-right {
   background: #2b2b2b;
   color:#fff;
   font-size: 18px;
-  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-width: 50px;
   margin-left: 1300px;
   margin-top: 50px;  
+
+
+
+
 }
+
+
+
 
 
 
