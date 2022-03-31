@@ -1,8 +1,9 @@
-<?php 
-include '../database.php' 
+<?php
+include '../database.php';
 
 
-?>
+
+ ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -48,9 +49,11 @@ include '../database.php'
     }
     
     </script> 
+
+   
   
   
-  <form name="theForm" method="post" action="..\..\urenregristratie\login\index.html"onsubmit="return checkEmail(this);">
+  <form name="theForm" method="post" action="..\..\urenregristratie\account\account.php"onsubmit="return checkEmail(this);">
    
    <!--Hier maak ik de invul velden-->
     <p>Username</p>
@@ -63,7 +66,7 @@ include '../database.php'
     <input type="password" name="password" placeholder="Enter Password" required>
     <p>Confirm Password</p>
     <input type="password" name="paswordcheck" placeholder="Re-Enter Password" required>
-    <input type="submit" name="" value="Create">
+    <input type="submit" name="" value="Create"  action=../login/index.php >
     <!--<a href="#">Forgot your password?</a><br>-->
     <a href="../login/index.php">Already have an account?</a>
 
@@ -83,11 +86,30 @@ include '../database.php'
 </body>
 </html>
 © 2022 GitHub, Inc.
-Terms
+TermsnN
 Privacy
 <?php
 
+$username = $_POST["Username"];
+$naam = $_POST["Name"];
+$password = $_POST["password"];
+$last_name = $_POST["LastName"];
+$data = [
+  'naam' => $naam,
+  'username' => $username,
+  'password' => $password,
+  'last_name' => $last_name
+];
+
+$sql = 'INSERT INTO medewerker(Username, Name, Password, Last_Name) VALUES(:username, :naam, :password, :last_name) ';
+
+$statement = $connection->prepare($sql);
+
+$statement->execute($data);
+$test = $statement->fetch();
+
+echo $test;
 
 
-
+ 
 ?>

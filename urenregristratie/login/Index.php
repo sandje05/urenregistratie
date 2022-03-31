@@ -23,13 +23,13 @@ include '../database.php'
   <div class="Login">
     <img src="IMG/Logo_HareWare.png" class="Logo">
   <h1>Login here</h1>
-  <form >
+  <form method="post" action="..\..\urenregristratie\login\index.php">
    
    <!--Hier maak ik de invul velden-->
     <p>Username</p>
-    <input type="text" name="" placeholder="Enter Username">
+    <input type="text" name="user" placeholder="Enter Username">
     <p>Password</p>
-    <input type="Password" name="" placeholder="Enter Password">
+    <input type="Password" name="wachtwoord" placeholder="Enter Password">
     <input type="submit" name="" value="Login">
     <!--<a href="#">Forgot your password?</a><br>-->
     <a href="../account/account.php">Don't have an account?</a>
@@ -49,3 +49,25 @@ include '../database.php'
 © 2022 GitHub, Inc.
 Terms
 Privacy
+<?php
+ header("..\..\urenregristratie\account\account.php");
+$gebruikersnaam = $_POST["user"];
+$wachtwoord = $_POST["wachtwoord"];
+
+$stmt = $pdo->prepare("SELECT * FROM medewerker WHERE Username = ?");
+$stmt->execute([$_POST['user']]);
+$user = $stmt->fetch();
+
+if ($gebruikersnaam && password_verify($_POST['wachtwoord'], $user['wachtwoord']))
+{
+    header("..\..\urenregristratie\account\account.php");
+} else {
+    echo "invalid";
+}
+
+
+
+
+
+
+?>
