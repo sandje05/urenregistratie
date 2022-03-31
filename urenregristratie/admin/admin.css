@@ -1,0 +1,81 @@
+body{
+padding: 0;
+margin: 0;
+}
+
+
+/*hier maak ik de grijse sidebar */
+.topbar {
+ height:100vh;
+ width:200px;
+ background-color:#2b2b2b;
+ display: flex;
+ flex-direction: column;
+ gap: 10px 30px;
+}
+/*hier position en resize ik het logo*/
+.Logo{ 
+max-width: 60%;
+bottom: 90%;
+margin-top: 10px;
+margin-left: 15%;
+} 
+/*hier style ik de link*/
+.link{
+display: flex;
+order: 4;
+font-size: 18px;
+}
+
+ul{
+color: white;
+list-style: none;
+padding:0;
+padding-left: 25px;
+}
+
+.agenda{
+margin-bottom: 30px;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    
+}
+
+p{
+font-family: sans-serif;
+
+}
+
+.text{
+position: fixed;
+top: 10%;
+margin-left: 20%;
+text-align: left;
+font-family: sans-serif;
+font-size: auto;
+
+
+
+}
+.title{
+position: fixed;
+top: 1%;
+margin-left: 20%;
+text-align: left;
+font-size: 35px;
+}
+
+.space{
+    color: white;
+}
+/* 
+.bg
+{
+height: 120vh;
+
+} */
