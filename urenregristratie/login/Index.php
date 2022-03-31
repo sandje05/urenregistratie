@@ -23,7 +23,7 @@ include '../database.php'
   <div class="Login">
     <img src="IMG/Logo_HareWare.png" class="Logo">
   <h1>Login here</h1>
-  <form method="post" action="..\..\urenregristratie\login\index.php">
+  <form method="post" action="..\..\urenregristratie\account\account.php">
    
    <!--Hier maak ik de invul velden-->
     <p>Username</p>
@@ -46,24 +46,21 @@ include '../database.php'
 
 </body>
 </html>
-© 2022 GitHub, Inc.
-Terms
-Privacy
 <?php
  header("..\..\urenregristratie\account\account.php");
-$gebruikersnaam = $_POST["user"];
-$wachtwoord = $_POST["wachtwoord"];
+//$gebruikersnaam = $_POST["user"];
+//$wachtwoord = $_POST["wachtwoord"];
 
-$stmt = $pdo->prepare("SELECT * FROM medewerker WHERE Username = ?");
-$stmt->execute([$_POST['user']]);
-$user = $stmt->fetch();
+//$stmt = $pdo->prepare("SELECT * FROM medewerker WHERE Username = ?");
+//$stmt->execute([$_POST['user']]);
+//$user = $stmt->fetch();
 
-if ($gebruikersnaam && password_verify($_POST['wachtwoord'], $user['wachtwoord']))
-{
-    header("..\..\urenregristratie\account\account.php");
-} else {
-    echo "invalid";
-}
+//if ($gebruikersnaam && password_verify($_POST['wachtwoord'], $user['wachtwoord']))
+//{
+  //  header("..\..\urenregristratie\account\account.php");
+//} else {
+   // echo "invalid";
+//}
 
 
 
