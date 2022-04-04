@@ -22,7 +22,7 @@ include '../database.php'
   <div class="Login">
     <img src="IMG/Logo_HareWare.png" class="Logo">
   <h1>Login here</h1>
-  <form method="post" action="..\..\urenregristratie\account\account.php">
+  <form method="post" action="../login/testpost.php">
    
    <!--Hier maak ik de invul velden-->
     <p>Username</p>
@@ -46,20 +46,16 @@ include '../database.php'
 </body>
 </html>
 <?php
- header("..\..\urenregristratie\account\account.php");
-//$gebruikersnaam = $_POST["user"];
-//$wachtwoord = $_POST["wachtwoord"];
-
-//$stmt = $pdo->prepare("SELECT * FROM medewerker WHERE Username = ?");
-//$stmt->execute([$_POST['user']]);
-//$user = $stmt->fetch();
-
-//if ($gebruikersnaam && password_verify($_POST['wachtwoord'], $user['wachtwoord']))
-//{
-  //  header("..\..\urenregristratie\account\account.php");
-//} else {
-   // echo "invalid";
-//}
+ 
+ $query = $connection->prepare("SELECT * FROM medewerkers WHERE Username = sandje");
+ $query->execute([$_POST['Username']]);
+ $user = $query->fetch();
+ if ($user && password_verify($_POST['Password']))
+ {
+     header("../account/account.php");
+ } else {
+     echo "Invalid identifier!";
+ }
 
 
 
