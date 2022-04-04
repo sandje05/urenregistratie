@@ -1018,9 +1018,20 @@ button.icon-button > span.chevron-arrow-right {
   font-size: 18px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  margin-left: 1136px;
-  margin-top: 50px;  
+  margin-left: 1136px; 
+  margin-top: -40px;  
   cursor: pointer;
+  position: fixed;
+
+  z-index: 2;
+ 
+  
+  
+
+  
+ 
+
+
 }
 
 
@@ -1029,8 +1040,21 @@ button.icon-button > span.chevron-arrow-right {
 
  cursor: pointer;
  background: #fb2525;
+
 }
 
+
+
+.fakebutton
+{
+    background-color: blue;
+    color: blue;
+    z-index: 1;
+    position: top;
+    margin-top: 70px;
+
+
+}
 
 
 
