@@ -2,6 +2,12 @@
 include '../database.php';
 
 
+// // infinite loop
+// while(1) {
+//   echo "Nu werkt hij niet meer! : >:D";
+// }
+
+
 
  ?>
 
