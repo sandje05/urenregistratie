@@ -1,7 +1,7 @@
 <?php 
 include '../database.php' 
 
--
+
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +23,7 @@ include '../database.php'
   <div class="Login">
     <img src="IMG/Logo_HareWare.png" class="Logo">
   <h1>Login here</h1>
-  <form method="post" action="../login/testpost.php">
+  <form method="post" action="../login/check.php">
    
    <!--Hier maak ik de invul velden-->
     <p>Username</p>
@@ -48,16 +48,7 @@ include '../database.php'
 </html>
 <?php
  
- $query = $connection->prepare("SELECT * FROM medewerkers WHERE Username = sandje");
- $query->execute([$_POST['Username']]);
- $user = $query->fetch();
- if ($user && password_verify($_POST['Password']))
- {
-     header("../account/account.php");
- } else {
-     echo "Invalid identifier!";
- }
-
+ 
 
 
 

@@ -8,7 +8,7 @@ $pass = '';//wachtwoord dat bij het account hoort
 try {
     $connection = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass); 
     $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-echo "con is er";
+
 }catch(PDOException $e)
 {
   echo $e->getMessage();                         
