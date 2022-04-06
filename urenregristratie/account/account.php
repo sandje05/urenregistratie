@@ -71,7 +71,7 @@ include '../database.php';
     <p>Confirm Password</p>
     <input type="password" name="paswordcheck" placeholder="Re-Enter Password" required>
     <input type="submit" name="register" value="Create"  action=../login/index.php >
-    <!--<a href="#">Forgot your password?</a><br>-->
+    <!--<a href="#">Forgot your password?</a><br>--> 
     <a href="../login/index.php">Already have an account?</a>
 
 
