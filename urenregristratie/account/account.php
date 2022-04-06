@@ -2,10 +2,8 @@
 include '../database.php';
 
 
-// // infinite loop
-// while(1) {
-//   echo "Nu werkt hij niet meer! : >:D";
-// }
+
+
 
 
 
@@ -100,10 +98,13 @@ $username = $_POST["Username"];
 $naam = $_POST["Name"];
 $password = $_POST["password"];
 $last_name = $_POST["LastName"];
+
+$hash_nrypt = password_hash($password, PASSWORD_DEFAULT);
+
 $data = [
   'naam' => $naam,
   'username' => $username,
-  'password' => $password,
+  'password' => $hash_nrypt,
   'last_name' => $last_name
 ];
 
