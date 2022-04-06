@@ -1,15 +1,29 @@
 <?php 
 include '../database.php';
 
-$data = $_POST['user'];
 
-$sql = 'SELECT * FROM medewerkers WHERE Username = ?';
 
-$statement = $connection->prepare($sql);
 
-$statement->execute($data);
-$test = $statement->fetch();
+$stmt = $connection->prepare("SELECT Password, Username FROM medewerker WHERE Username = ?");
+$stmt->execute([$_POST['user']]);
+$user = $stmt->fetch();
 
-echo $data;
+var_dump($_POST['wachtwoord']);
+var_dump($user['Password']);
+var_dump(password_verify('admin', $user['Password']));
+die();
+
+if ($user && password_verify($_POST['wachtwoord'], $user['Password']))
+{
+    echo "Goed!";
+} else {
+    echo "Fout!";
+}
+
+
+
+
+
+
 
 ?>
