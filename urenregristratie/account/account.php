@@ -70,7 +70,7 @@ include '../database.php';
     <input type="password" name="password" placeholder="Enter Password" required>
     <p>Confirm Password</p>
     <input type="password" name="paswordcheck" placeholder="Re-Enter Password" required>
-    <input type="submit" name="" value="Create"  action=../login/index.php >
+    <input type="submit" name="register" value="Create"  action=../login/index.php >
     <!--<a href="#">Forgot your password?</a><br>-->
     <a href="../login/index.php">Already have an account?</a>
 
@@ -94,29 +94,30 @@ TermsnN
 Privacy
 <?php
 
-$username = $_POST["Username"];
-$naam = $_POST["Name"];
-$password = $_POST["password"];
-$last_name = $_POST["LastName"];
+if(isset($_POST) && !empty($_POST['register'])) {
+  $username = $_POST["Username"];
+  $naam = $_POST["Name"];
+  $password = $_POST["password"];
+  $last_name = $_POST["LastName"];
 
-$hash_nrypt = password_hash($password, PASSWORD_DEFAULT);
+  $hash_nrypt = password_hash($password, PASSWORD_DEFAULT);
 
-$data = [
-  'naam' => $naam,
-  'username' => $username,
-  'password' => $hash_nrypt,
-  'last_name' => $last_name
-];
+  $data = [
+    'naam' => $naam,
+    'username' => $username,
+    'password' => $hash_nrypt,
+    'last_name' => $last_name
+  ];
 
-$sql = 'INSERT INTO medewerker(Username, Name, Password, Last_Name) VALUES(:username, :naam, :password, :last_name) ';
+  $sql = 'INSERT INTO medewerker(Username, Name, Password, Last_Name) VALUES(:username, :naam, :password, :last_name) ';
 
-$statement = $connection->prepare($sql);
+  $statement = $connection->prepare($sql);
 
-$statement->execute($data);
-$test = $statement->fetch();
+  $statement->execute($data);
+  $test = $statement->fetch();
 
-echo $test;
-
+  echo $test;
+}
 
  
 ?>
