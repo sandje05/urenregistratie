@@ -4,8 +4,7 @@ include "../database.php";
 $activity = $_POST['fname'];
 $date = $_POST['date'];
 $hour = $_POST['hour'];
-echo $activity;
-echo $date;
+
 
 $data = [
     'naam' => $activity,
@@ -22,6 +21,8 @@ $data = [
   $test = $statement->fetch();
   
   echo $test;
+
+  header('../agenda/evenementen.php');
 
  
 

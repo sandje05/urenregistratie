@@ -1,5 +1,7 @@
 <?php
+$sql='SELECT * FROM '
 
+-
 ?>
 
 <!DOCTYPE html>
