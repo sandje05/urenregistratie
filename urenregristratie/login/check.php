@@ -14,7 +14,7 @@ if ($user && password_verify($_POST['wachtwoord'], $user['Password']))
     header('Location: ../agenda/agenda.html');
 } else {
    
-    header('Location: ../login/index.php/');
+    header('Location: ../login/index.php');
 }
 
 
