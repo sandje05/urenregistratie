@@ -22,7 +22,7 @@ $data = [
   
   echo $test;
 
-  header('../agenda/evenementen.php');
+  header('location: ../agenda/agenda.html');
 
  
 
