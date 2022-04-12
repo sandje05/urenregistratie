@@ -3,7 +3,7 @@ session_start();
 ?>
 <html>
 <head>
-<title>User Login</title>
+<title>User screen</title>
 </head>
 <body>
 

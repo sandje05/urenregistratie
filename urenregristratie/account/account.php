@@ -93,7 +93,7 @@ include '../database.php';
 TermsnN
 Privacy
 <?php
-
+//hier ontvang ik de data
 if(isset($_POST) && !empty($_POST['register'])) {
   $username = $_POST["Username"];
   $naam = $_POST["Name"];
@@ -101,7 +101,7 @@ if(isset($_POST) && !empty($_POST['register'])) {
   $last_name = $_POST["LastName"];
 
   $hash_nrypt = password_hash($password, PASSWORD_DEFAULT);
-
+// hier gooi ik alle data in een array
   $data = [
     'naam' => $naam,
     'username' => $username,
@@ -110,7 +110,7 @@ if(isset($_POST) && !empty($_POST['register'])) {
   ];
 
   $sql = 'INSERT INTO medewerker(Username, Name, Password, Last_Name) VALUES(:username, :naam, :password, :last_name) ';
-
+//hier execute ik de sql in username, naam, password en last_name
   $statement = $connection->prepare($sql);
 
   $statement->execute($data);
