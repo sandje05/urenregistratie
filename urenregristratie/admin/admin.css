@@ -52,6 +52,7 @@ font-family: sans-serif;
 
 }
 
+
 .text{
 position: fixed;
 top: 10%;
@@ -71,12 +72,19 @@ text-align: left;
 font-size: 35px;
 }
 
-.space{
-    color: white;
-}
-/* 
-.bg
-{
-height: 120vh;
 
-} */
+.INFO{
+    display: flex;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0px;
+    position: absolute;
+    margin-left: 25%;
+    max-height: 100vh;
+}
+
+.INFO_CON{
+    display: flex;
+    flex-direction: column;
+
+}
