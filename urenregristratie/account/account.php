@@ -118,6 +118,9 @@ if(isset($_POST) && !empty($_POST['register'])) {
 
   echo $test;
 }
+if($test == $test){
+  header(location:"../login/index.php");
+}
 
  
 ?>
