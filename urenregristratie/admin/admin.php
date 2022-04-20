@@ -1,13 +1,27 @@
 <?php
 include '../database.php';
-$gebruiker = "JEsse";
+$gebruiker = 'admin';
+$y= 'JEsse';
+$x= 'SANDER123';
+// $Nevtest= '$nav';
+// $Niettest= '$nav';
+// $test = '$nav';
+ 
 
+     $stmt = $connection->prepare ("SELECT Username, Last_Name, Name, Level FROM medewerker WHERE Username = '$gebruiker'");
 
-     $stmt = $connection->prepare ("SELECT Username, Last_Name, Name, Level, Password FROM medewerker WHERE Username = '$gebruiker'");
      $stmt->execute();
      $test = $stmt->fetch();     
 
+     $statement = $connection->prepare ("SELECT Username, Last_Name, Name, Level FROM medewerker WHERE Username = '$y'");
 
+     $statement->execute();
+     $Niettest = $statement->fetch(); 
+
+     $statement = $connection->prepare ("SELECT Username, Last_Name, Name, Level FROM medewerker WHERE Username = '$x'");
+
+     $statement->execute();
+     $Nevtest = $statement->fetch(); 
 
 
  
@@ -23,15 +37,12 @@ $gebruiker = "JEsse";
 <link rel="stylesheet" href="admin.css">
 </head>
 <body>
-<!-- <form action="../admin/zoek.html">
-<input type="submit" name="" value="Login">
-</form> -->
-
-<style> 
+<style>
+ /*hover color red  */
 a:hover {
 color: red;    
 }    
-
+/* maken van de grijse bar */
 </style>
     <div class="topbar"> 
            <div>
@@ -42,19 +53,49 @@ color: red;
                          <li class="agenda" > <a href="/Urenpro/urenregistratie/urenregristratie/agenda/agenda.html">Terug naar agenda</a></li>
                         </ul>
                         </div>
+<!-- Display de informatie  -->
 <div class="INFO_CON">
 
          <p class="INFO"> 
          <?php 
-         echo $test['Username'];    
+
+         ?> 
+         <br>
+       <?php  echo $test['Username']; ?>
+        </br>
+        
+        <br>  
+        <?php
          echo $test['Name']; 
-         echo $test['Level'];
-         echo $test['Password'];
+         ?>
+         </br>
+         
+         <br>
+         <?php echo $test['Level'];
+         ?>
+         </br>
+
+         <!-- <br> 
+         
+     //     echo $test['Password'];
+         
+</br> -->
+<?php
+         echo $Niettest['Username'];
+         echo $Niettest['Name'];
+         echo $Niettest['Level'];
+     //     echo $Niettest['Password'];
+
+         echo $Nevtest['Username'];
+         echo $Nevtest['Name'];
+         echo $Nevtest['Level'];
+     //     echo $Nevtest['Password'];
          ?></p>    
        
 </div>
     </div>
-  <div> 
+  <div>
+        <!-- title  -->
         <p class="title">
            Admin dashboard 
         </p>
