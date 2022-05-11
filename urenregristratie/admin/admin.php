@@ -1,31 +1,35 @@
 <?php
 include '../database.php';
-$gebruiker = 'admin';
-$y= 'JEsse';
-$x= 'SANDER123';
-// $Nevtest= '$nav';
-// $Niettest= '$nav';
-// $test = '$nav';
- 
 
-     $stmt = $connection->prepare ("SELECT Username, Last_Name, Name, Level FROM medewerker WHERE Username = '$gebruiker'");
+try {
 
-     $stmt->execute();
-     $test = $stmt->fetch();     
+    $sql = 'SELECT Last_Name,
+                    Name,
+                    Username
+               FROM medewerker';
+            // WHERE Last_Name LIKE :lname OR 
+            // Name LIKE :fname;';
 
-     $statement = $connection->prepare ("SELECT Username, Last_Name, Name, Level FROM medewerker WHERE Username = '$y'");
+    // prepare statement for execution
+    $q = $connection->prepare($sql);
+    
+    // pass values to the query and execute it
 
-     $statement->execute();
-     $Niettest = $statement->fetch(); 
+    $q->execute();
 
-     $statement = $connection->prepare ("SELECT Username, Last_Name, Name, Level FROM medewerker WHERE Username = '$x'");
+    // manier van ophalen data.
+    $q->setFetchMode(PDO::FETCH_ASSOC);
+    // $q->fetch();
+    // print out the result set
+    // while ($r = $q->fetch()) {
+    // echo sprintf('%s <br/>', $r ['Name']);
+    // }
+} catch (PDOException $e) {
+    die("Could not connect to the database $dbname :" . $e->getMessage());
+}
 
-     $statement->execute();
-     $Nevtest = $statement->fetch(); 
-
-
- 
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -44,8 +48,8 @@ color: red;
 }    
 /* maken van de grijse bar */
 </style>
-    <div class="topbar"> 
-           <div>
+<div class="topbar">
+     <div>
                 <img src="IMG/Logo_HareWare.png" alt="Logo HareWare" class="Logo">
            </div> 
                    <div class="link">
@@ -53,57 +57,40 @@ color: red;
                          <li class="agenda" > <a href="/Urenpro/urenregistratie/urenregristratie/agenda/agenda.html">Terug naar agenda</a></li>
                         </ul>
                         </div>
-<!-- Display de informatie  -->
 <div class="INFO_CON">
-
-         <p class="INFO"> 
-         <?php 
-
-         ?> 
-         <br>
-       <?php  echo $test['Username']; ?>
-        </br>
-        
-        <br>  
-        <?php
-         echo $test['Name']; 
-         ?>
-         </br>
-         
-         <br>
-         <?php echo $test['Level'];
-         ?>
-         </br>
-
-         <!-- <br> 
-         
-     //     echo $test['Password'];
-         
-</br> -->
-<?php
-         echo $Niettest['Username'];
-         echo $Niettest['Name'];
-         echo $Niettest['Level'];
-     //     echo $Niettest['Password'];
-
-         echo $Nevtest['Username'];
-         echo $Nevtest['Name'];
-         echo $Nevtest['Level'];
-     //     echo $Nevtest['Password'];
-         ?></p>    
-       
-</div>
-    </div>
-  <div>
+<div class="output">
         <!-- title  -->
         <p class="title">
            Admin dashboard 
         </p>
-   
-     
+
+     <?php 
+            
+            while($r = $q->fetch()) { 
+            echo "<h1>Voornaam=" . $r['Name'] . "</h1 >";
+            echo "<h1> Gebruikersnaam=" . $r['Username'] . "</h1 > ";
+            echo "<h1>Achternaam=" . $r['Last_Name'] . "</h1 > <br>";
+            }
+           
+        ?>
+
 
 </div>
+     
+          
+      
+<!-- Display de informatie  -->
 
-</body>
+
+         <p class="INFO"> 
+            </div>   
+         
+       
+
+      
+   
+
+    
+</body >
 </html>
 

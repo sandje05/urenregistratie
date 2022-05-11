@@ -21,13 +21,19 @@ bottom: 90%;
 margin-top: 10px;
 margin-left: 15%;
 } 
+
 /*hier style ik de link*/
 .link{
 display: flex;
-order: 4;
+order: 0;
 font-size: 18px;
+position: top !important;
 }
 
+ul{
+list-style: none;
+
+}
 
 .agenda{
 margin-bottom: 30px;
@@ -38,13 +44,17 @@ a{
     text-decoration: none;
     color: white;
     font-family: sans-serif;
-    
+    margin-left: -20px;
 }
 
-p{
+h1{
+display: flex; 
 font-family: sans-serif;
-
+font-size: 1em;
+text-align: left;
+font-weight: lighter;
 }
+
 
 
 .text{
@@ -58,27 +68,34 @@ font-size: auto;
 
 
 }
-.title{
-position: fixed;
+.title{ 
+position: absolute;
 top: 1%;
-margin-left: 25%;
 text-align: left;
 font-size: 35px;
+display: contents;
+font-family: sans-serif;
 }
 
 
 .INFO{
-    display: flex;
     font-family: sans-serif;
     text-align: center;
     margin: 0px;
-    position: absolute;
     margin-left: 25%;
     max-height: 100vh;
 }
 
-.INFO_CON{
-    display: flex;
-    flex-direction: column;
+.INFO_CON {
+padding-left: 200px;
+margin-top: -150px;
+z-index: -12;
+width: 1000px;
+}
+
+.output{
+height: auto;
+padding-left: 40px;
+border: 0px;
 
 }
