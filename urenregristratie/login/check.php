@@ -10,7 +10,7 @@ $user = $stmt->fetch();
 
 $_SESSION["id"] = $user['ID_worker'];
 $_SESSION["name"] = $user['Username'];
-if ($user && password_verify($_POST['wachtwoord'], $user['Password'])) //password check
+if ($user && password_verify($_POST['wachtwoord'], $user['Password'])) //password check doormiddel van password verify 
 {
 
 if(isset($_SESSION["id"])){

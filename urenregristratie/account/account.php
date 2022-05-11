@@ -70,7 +70,7 @@ include '../database.php';
     <input type="password" name="password" placeholder="Enter Password" required>
     <p>Confirm Password</p>
     <input type="password" name="paswordcheck" placeholder="Re-Enter Password" required>
-    <input type="submit" name="register" value="Create"  action=../login/index.php >
+    <input type="submit" name="register" value="Create"  action="../login/index.php">
     <!--<a href="#">Forgot your password?</a><br>--> 
     <a href="../login/index.php">Already have an account?</a>
 
@@ -118,9 +118,9 @@ if(isset($_POST) && !empty($_POST['register'])) {
 
   echo $test;
 }
-if($test == $test){
-  header(location:"../login/index.php");
-}
 
+if(isset($_POST) && !empty($_POST['register'])){
+  header('location:../login/index.php');
+}
  
 ?>
