@@ -14,5 +14,5 @@ Welcome <?php echo $_SESSION["name"]; ?>. Click here to <a href="../logout.php" 
 <?php
 }else echo "<h1>Please login first .</h1>";
 ?>
-    <a href="../agenda/agenda.html">Agenda</a>
+    <a href="../display/display.php">Agenda</a>
 </body>
