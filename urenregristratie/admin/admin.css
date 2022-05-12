@@ -12,22 +12,19 @@ margin: 0;
  display: flex;
  flex-direction: column;
  gap: 10px 30px;
- border-radius: 4px;
 }
 /*hier position en resize ik het logo*/
 .Logo{ 
 max-width: 60%;
-bottom: 90%;
 margin-top: 10px;
 margin-left: 15%;
 } 
 
 /*hier style ik de link*/
 .link{
-display: flex;
 order: 0;
 font-size: 18px;
-position: top !important;
+
 }
 
 ul{
@@ -48,43 +45,18 @@ a{
 }
 
 h1{
-display: flex; 
 font-family: sans-serif;
 font-size: 1em;
-text-align: left;
 font-weight: lighter;
 }
 
 
-
-.text{
-position: fixed;
-top: 10%;
-margin-left: 20%;
-text-align: left;
-font-family: sans-serif;
-font-size: auto;
-
-
-
-}
 .title{ 
-position: absolute;
-top: 1%;
-text-align: left;
 font-size: 35px;
 display: contents;
 font-family: sans-serif;
 }
 
-
-.INFO{
-    font-family: sans-serif;
-    text-align: center;
-    margin: 0px;
-    margin-left: 25%;
-    max-height: 100vh;
-}
 
 .INFO_CON {
 padding-left: 200px;
@@ -94,8 +66,6 @@ width: 1000px;
 }
 
 .output{
-height: auto;
 padding-left: 40px;
-border: 0px;
 
 }

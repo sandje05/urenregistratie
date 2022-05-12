@@ -82,7 +82,6 @@ color: red;
 <!-- Display de informatie  -->
 
 
-         <p class="INFO"> 
             </div>   
          
        
