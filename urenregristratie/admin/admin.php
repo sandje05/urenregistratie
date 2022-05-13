@@ -93,6 +93,9 @@ color: red;
 <input type="submit" value="ww veranderen">
 </form>
     
+<form action="../inactive/inactive.php" method="post">
+<input type="submit" value="inactive">
+</form>
 </body >
 </html>
 
