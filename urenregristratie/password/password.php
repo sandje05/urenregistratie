@@ -1,5 +1,4 @@
 <?php
-include '../database.php';
 
 
 
@@ -21,11 +20,38 @@ include '../database.php';
     <title>Document</title>
 </head>
 <body>
-    <form action="../password/change.php" method="post">
-<select name="change1" id="change2">
-<option value="volvo">Volvo</option>
-</select>
+<form action="../password/change.php" method="POST">
+<select name="change1" id="change1">
+<?php include '../database.php';
 
-    </form>
+
+$sql = 'SELECT Name FROM medewerker';
+$q = $connection->prepare($sql);
+$q->execute();
+$q->setFetchMode(PDO::FETCH_ASSOC);
+
+
+
+    while($r = $q->fetch()) { 
+
+
+      ?>  <option value ="<?php echo($r['Name']);?>"><?php echo($r['Name']);?></option>
+
+
+<?php
+    }
+
+?>
+    
+
+
+
+
+
+</select>
+<input type="password" name="password" placeholder="nieuw wachtwoord" >
+ <input type="submit" value="../password/change.php">
+
+</form>
 </body>
 </html>

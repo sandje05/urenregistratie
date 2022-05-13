@@ -87,8 +87,11 @@ color: red;
        
 
       
-   
+   <!-- naar ww veranderen gaan -->
+<form action="../password/password.php" method="post">
 
+<input type="submit" value="ww veranderen">
+</form>
     
 </body >
 </html>
