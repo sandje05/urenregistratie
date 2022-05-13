@@ -96,6 +96,10 @@ color: red;
 <form action="../inactive/inactive.php" method="post">
 <input type="submit" value="inactive">
 </form>
+<form action="../logout.php" method="post">
+
+<input type="submit" value="logout">
+</form>
 </body >
 </html>
 

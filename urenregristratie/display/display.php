@@ -40,5 +40,9 @@ include '../database.php';
 
      </form>
     </div>
+    <form action="../logout.php" method="post">
+
+<input type="submit" value="logout">
+</form>
 </body>
 </html>
