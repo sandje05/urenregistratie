@@ -54,7 +54,7 @@ color: red;
            </div> 
                    <div class="link">
                         <ul>     
-                         <li class="agenda" > <a href="/Urenpro/urenregistratie/urenregristratie/agenda/agenda.html">Terug naar agenda</a></li>
+                         <li class="agenda" > <a href="../display/display.php">Terug naar agenda</a></li>
                         </ul>
                         </div>
 <div class="INFO_CON">
