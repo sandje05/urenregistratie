@@ -20,8 +20,8 @@
     <title>Document</title>
 </head>
 <body>
-<form action="../inactive/inactive2.php" method="POST">
-<select name="change1" id="change1">
+<form action="../level/submit.php" method="POST">
+<select name="change2" id="change2">
 <?php include '../database.php';
 
 
@@ -49,7 +49,12 @@ $q->setFetchMode(PDO::FETCH_ASSOC);
 
 
 </select>
- <input type="submit" value="inactive">
+<select name="level" id="level">
+<option value="2">admin</option>
+<option value="0">medewerker</option>
+<option value="1">in actief</option>
+</select>
+ <input type="submit" value="kies">
 
 </form>
 </body>
