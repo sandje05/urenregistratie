@@ -41,23 +41,31 @@ try {
 <link rel="stylesheet" href="admin.css">
 </head>
 <body>
+<div class="Background">
 <style>
  /*hover color red  */
 a:hover {
 color: red;    
-}    
+}   
+
+input:hover{
+color:red;
+}
 /* maken van de grijse bar */
 </style>
+   
 <div class="topbar">
+   
      <div>
                 <img src="IMG/Logo_HareWare.png" alt="Logo HareWare" class="Logo">
            </div> 
+           
                    <div class="link">
                         <ul>     
                          <li class="agenda" > <a href="../display/display.php">Terug naar agenda</a></li>
                         </ul>
                         </div>
-<div class="INFO_CON">
+<!-- <div class="INFO_CON"> -->
 <div class="output">
         <!-- title  -->
         <p class="title">
@@ -77,12 +85,12 @@ color: red;
 
 </div>
      
-          
+
       
 <!-- Display de informatie  -->
 
 
-            </div>   
+            <!-- </div>    -->
          
        
 
@@ -100,7 +108,9 @@ color: red;
 </form>
 <form action="../level/level.php" method="post">
 <input type="submit" value="level select">
+      
 </form>
+        </div>
 </body >
 </html>
 

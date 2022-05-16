@@ -3,7 +3,11 @@ padding: 0;
 margin: 0;
 }
 
+.Background{
+background-color: lightgrey;
+z-index: -300;
 
+}
 /*hier style ik de grijse sidebar */
 .topbar {
  height:100%;
@@ -25,12 +29,11 @@ margin-left: 15%;
 .link{
 order: 0;
 font-size: 18px;
-
+margin-bottom: -30px;
 }
 
 ul{
 list-style: none;
-
 }
 
 .agenda{
@@ -59,14 +62,27 @@ font-family: sans-serif;
 }
 
 
-.INFO_CON {
-padding-left: 200px;
-margin-top: -150px;
-z-index: -12;
-width: 500px;
-}
 
 .output{
-padding-left: 40px;
+float: right;
+margin-top: -150px;
+width: 500px;
+position: fixed;
+    margin-left: 230px;
+    margin-top: 40px;
+}
+
+input {
+    border: none;
+    background-color: transparent;
+    padding-left: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    color: white;
+
 
 }
