@@ -20,7 +20,7 @@ body{
     width: 320px;
     height: 420px;
     background: #2b2b2b;
-    color: #FAF9F6;
+    color: #fff;
     top: 50%;
     Left: 50%;
     position: absolute;
@@ -61,11 +61,11 @@ body{
   {
 
     border: none;
-    border-bottom: 1px solid #FAF9F6;
+    border-bottom: 1px solid #fff;
     background: transparent;
     outline: none;
     height: 40px;
-    color: #FAF9F6;
+    color: #fff;
     font-size: 16px;
 
   }
@@ -77,7 +77,7 @@ body{
   outline:none;
   height: 40px;
   background: #fb2525;
-  color:#FAF9F6;
+  color:#fff;
   font-size: 18px;
   border-radius: 20px;
 }
