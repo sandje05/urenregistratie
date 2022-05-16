@@ -1,6 +1,6 @@
 <?php
 include '../database.php';
-
+session_start()
 
 
 
@@ -21,6 +21,16 @@ include '../database.php';
     <img src="IMG/Logo_HareWare.png" class="Logo">
 </head>
 <body>
+
+
+    <?php $level = "2";
+    if($_SESSION['level'] == $level){?>
+    <form action="../admin/admin.php" method="post">
+<button type="submit">hoiiiiii </button>
+    </form>
+<?php } 
+?>
+
     <div  class="inputvelden">
     <form action="../display/displaydata.php" method="post" >
         <input type="date" name="date1" id="date1">

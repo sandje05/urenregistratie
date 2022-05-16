@@ -10,6 +10,7 @@ $user = $stmt->fetch();
 
 $_SESSION["id"] = $user['ID_worker'];
 $_SESSION["name"] = $user['Username'];
+$_SESSION["level"] = $user['Level'];
 if ($user && password_verify($_POST['wachtwoord'], $user['Password'])) //password check doormiddel van password verify 
 {
     if($user["Level"] == $level){
@@ -18,13 +19,17 @@ if ($user && password_verify($_POST['wachtwoord'], $user['Password'])) //passwor
     }else{
         
         if(isset($_SESSION["id"])){
-        header('Location: ../test/test.php');}
+        header('Location: ../display/display.php');}
     else{ 
        
         header('Location: ../login/index.php');}    
         
     }
-}
+}  else{ 
+       
+    header('Location: ../login/index.php');}    
+    
+
 
 
 
