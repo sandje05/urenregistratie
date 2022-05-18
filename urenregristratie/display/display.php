@@ -21,7 +21,9 @@ session_start()
     <img src="IMG/Logo_HareWare.png" class="Logo">
 </head>
 <body>
-<div class="Background">    
+<div>
+<img src="IMG/Background-Mac.jpg" class="background">
+
 <style>
 
     button:hover{
@@ -39,28 +41,27 @@ session_start()
 ?>
    
     <div  class="inputvelden">
-         <p  class="T-Event"> Zoek hier je event </p>
     <form action="../display/displaydata.php" method="post" >
+    <p  class="T-Event"> Zoek hier je event </p>
         <input type="date" name="date1" id="date1">
         <button class="SEARCH" type="submit"> Search </button>
     </form>
 
     <div class="fakebutton">
     </div>
-
-     <input type="submit" value="logout">
-     
-     <div class="Login">
+ <div class="Login">
      <form 
      name="" action="../agenda/evenement.php">
-        <input type="submit" name="date1" value="vul hier je event in">
+        <input class="firstfield" type="submit" name="date1" value="vul hier je event in">
+     
+    
 </div>
 
      </form>
     </div>
     <form action="../logout.php" method="post">
-
-    </div>
+    </div> 
+</div>  
 </form>
 </body>
 </html>

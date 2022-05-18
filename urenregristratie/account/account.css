@@ -6,12 +6,13 @@ body{
 }
 /* de foto achter de inlog pagina*/
   .background {
-   background-size: cover;
+   /* background-size: cover;
    background-position: center;
    font-family: sans-serif;
    background-repeat: no-repeat;
    height: 100vh;
    width: 100%;
+   z-index: -300; */
    
   }
   /* de box zelf */
