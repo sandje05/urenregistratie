@@ -21,26 +21,34 @@ session_start()
     <img src="IMG/Logo_HareWare.png" class="Logo">
 </head>
 <body>
+<div class="Background">    
+<style>
 
+    button:hover{
+    color:red     
+   
+   }
 
+</style>
     <?php $level = "2";
     if($_SESSION['level'] == $level){?>
     <form action="../admin/admin.php" method="post">
-<button type="submit">hoiiiiii </button>
+<button class="Hidden" type="submit"> Admin page </button>
     </form>
 <?php } 
 ?>
-
+   
     <div  class="inputvelden">
+         <p  class="T-Event"> Zoek hier je event </p>
     <form action="../display/displaydata.php" method="post" >
         <input type="date" name="date1" id="date1">
-        <button class="SEARCH" type="submit"></button>
+        <button class="SEARCH" type="submit"> Search </button>
     </form>
 
     <div class="fakebutton">
     </div>
 
-     
+     <input type="submit" value="logout">
      
      <div class="Login">
      <form 
@@ -52,7 +60,7 @@ session_start()
     </div>
     <form action="../logout.php" method="post">
 
-<input type="submit" value="logout">
+    </div>
 </form>
 </body>
 </html>
