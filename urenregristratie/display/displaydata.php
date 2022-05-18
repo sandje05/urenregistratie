@@ -36,5 +36,8 @@ if($F != true ){
 
 <input type="submit" value="logout">
 </form>
+<form action="../display/display.php">
+    <input type="submit" value="terug">
+</form>
 </body>
 </html>
