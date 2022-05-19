@@ -23,7 +23,7 @@ $data = [
   
   echo $test;
 
-  header('location: ../agenda/agenda.html');
+  header('location: ../display/display.php');
 
  
 

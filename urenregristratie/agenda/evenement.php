@@ -13,8 +13,8 @@ include "../database.php";
 <link rel="stylesheet" href="evenementen.css">
 
 
-    <img src="IMG/Logo_HareWare.png" class="Logo">
-</div>    
+    
+
 
 
 
@@ -27,6 +27,7 @@ include "../database.php";
   </div>
     
     <div class="inputvelden">
+    <img src="IMG/Logo_HareWare.png" class="Logo">
    <h1>Event here</h1>
     <form method="post" action="../agenda/actionpage.php">
       
