@@ -75,9 +75,10 @@ color:red;
      <?php 
             
             while($r = $q->fetch()) { 
-            echo "<h1>Voornaam=" . $r['Name'] . "</h1 >";
-            echo "<h1> Gebruikersnaam=" . $r['Username'] . "</h1 > ";
-            echo "<h1>Achternaam=" . $r['Last_Name'] . "</h1 > <br>";
+            echo "<h1>Voornaam = " . $r['Name'] . "</h1 >";
+          
+            echo "<h1>Achternaam = " . $r['Last_Name'] . "</h1 > ";
+            echo "<h1> Gebruikersnaam = " . $r['Username'] . "</h1 ><br> ";
             }
            
         ?>
@@ -98,16 +99,16 @@ color:red;
    <!-- naar ww veranderen gaan -->
 <form action="../password/password.php" method="post">
 
-<input type="submit" value="ww veranderen">
+<input type="submit" value="Ww veranderen">
 </form>
     
 <form action="../level/level.php" method="post">
-<input type="submit" value="level select">
+<input type="submit" value="Level select">
       
 </form>
 <form action="../logout.php" method="post">
 
-<input type="submit" value="logout">
+<input type="submit" value="Logout">
 </form>
         </div>
 </body >
