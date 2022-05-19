@@ -101,14 +101,13 @@ color:red;
 <input type="submit" value="ww veranderen">
 </form>
     
-
-<form action="../logout.php" method="post">
-
-<input type="submit" value="logout">
-</form>
 <form action="../level/level.php" method="post">
 <input type="submit" value="level select">
       
+</form>
+<form action="../logout.php" method="post">
+
+<input type="submit" value="logout">
 </form>
         </div>
 </body >
