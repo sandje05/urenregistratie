@@ -50,7 +50,7 @@ include '../database.php'
  
  
 $checker = "http://localhost/urenregi/uren/urenregristratie/login/index.php";
-$checker2 =  "http://localhost/urenregi/uren/urenregristratie/login/";
+$checker2 =  "http://localhost/urenregi/uren/urenregristratie/login/check.php";
 if($_SERVER['HTTP_REFERER'] == $checker){
   $message = "fout wachtwoord of geruikersnaam";
 echo "<script type='text/javascript'>alert('$message');</script>";
