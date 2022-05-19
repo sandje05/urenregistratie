@@ -49,8 +49,8 @@ include '../database.php'
 <?php
   
  
-$checker = "http://localhost/urenregestratie/urenregistratie/urenregristratie/login/index.php";
-$checker2 =  "http://localhost/urenregestratie/urenregistratie/urenregristratie/login/";
+$checker = "http://localhost/urenregi/urenregristratie/login/index.php";
+$checker2 =  "http://localhost/urenregi/urenregristratie/login/";
   if($_SERVER['HTTP_REFERER'] == $checker){
   $message = "fout wachtwoord of geruikersnaam";
 echo "<script type='text/javascript'>alert('$message');</script>";
