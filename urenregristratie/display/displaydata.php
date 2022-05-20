@@ -24,18 +24,23 @@ $id = $_SESSION["id"];
     
 $stmt = $connection->prepare("SELECT * FROM activiteit WHERE Activity_date = ? AND Worker_id = ?");
 $stmt->execute([$date1, $id]); //execute om data uit database te halen
-$F = $stmt->fetch();
+$stmt->setFetchMode(PDO::FETCH_ASSOC);
 ?>
 
 <?php
-if($F != true ){
+if($stmt != true ){
     ?> 
     
     <div class="geenactivitiet">   <?php echo "Je hebt geen activiteit vandaag! Vraag even rond of je wat kan doen.";
 }else{
-    echo $F['activity']; echo "<br>";  
-    echo $F['Activity_Hour']; echo "<br>";
-    echo $F['Activity_date']; echo "<br>";
+    
+            
+    while($F = $stmt->fetch()) {
+    echo $F['activity'];  echo ", ";
+    echo $F['Activity_Hour']; echo ", ";
+    echo $F['Activity_date']; echo "</br>";
+
+}
 
 }
 ?>
@@ -45,7 +50,7 @@ if($F != true ){
 <form action="../logout.php" method="post">
 <button class="logout" type="submit"> Uitloggen </button>
 </form>
-<form action="../display/display.php">
+<form action="../agenda/evenement.php">
 <button class="submit" type="submit">Event aanmaken </button>
 </form>
 
