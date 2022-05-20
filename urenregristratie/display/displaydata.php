@@ -1,3 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="displaydata.css">
+    <title>Evenementen</title>
+</head>
+<body> 
+
+
+<div class="feld">
+<img src="IMG/Logo_HareWare.png" class="Logo">
+
+
+
+
 <?php
 include '../database.php';
 session_start();
@@ -7,37 +25,31 @@ $id = $_SESSION["id"];
 $stmt = $connection->prepare("SELECT * FROM activiteit WHERE Activity_date = ? AND Worker_id = ?");
 $stmt->execute([$date1, $id]); //execute om data uit database te halen
 $F = $stmt->fetch();
+?>
 
-
-
+<?php
 if($F != true ){
-    echo "er is niks op die dag mongool";
+    ?> 
+    
+    <div class="geenactivitiet">   <?php echo "Je hebt geen activiteit vandaag! Vraag even rond of je wat kan doen.";
 }else{
     echo $F['activity']; echo "<br>";  
     echo $F['Activity_Hour']; echo "<br>";
     echo $F['Activity_date']; echo "<br>";
 
 }
-
-
-
-
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-<form action="../logout.php" method="post">
 
-<input type="submit" value="logout">
+
+<div class="buttons">
+<form action="../logout.php" method="post">
+<button class="logout" type="submit"> Uitloggen </button>
 </form>
 <form action="../display/display.php">
-    <input type="submit" value="terug">
+<button class="submit" type="submit">Event aanmaken </button>
 </form>
+
+
+</div>
 </body>
 </html>

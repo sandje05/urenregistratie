@@ -1,0 +1,59 @@
+body{
+margin: 0;
+padding: 0;
+background-image: url(IMG/Background-Mac.jpg);
+}
+
+.geenactivitiet{
+text-align: left;
+align-items: center;
+
+}
+
+.feld{
+    padding: 70px 70px;
+    width: 650px;
+    background: #2b2b2b;
+    color: white;
+    top: 50%;
+    Left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    font-family: arial;
+    text-align: left;
+
+}
+
+button{
+    border: none;
+    color: white;
+    background-color: red;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-top: 10px;
+
+
+}
+
+.logout{
+margin-top: 90px;
+margin-right: 25px;
+float:right;
+
+}
+
+.submit{
+margin-top: 90px;
+
+}
+.Logo{
+width: 160px;
+height: 100px;
+border-radius: 0%;
+position: absolute;
+top: -50px;
+left: calc(45% - 50px);}
