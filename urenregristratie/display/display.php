@@ -18,7 +18,7 @@ session_start()
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="display.css">
-    <img src="IMG/Logo_HareWare.png" class="Logo">
+   
 </head>
 <body>
 <div>
@@ -41,6 +41,7 @@ session_start()
 ?>
    
     <div  class="inputvelden">
+           <img src="IMG/Logo_HareWare.png" class="Logo">
     <form action="../display/displaydata.php" method="post" >
     <p  class="T-Event"> Zoek hier je event </p>
         <input type="date" name="date1" id="date1">

@@ -22,19 +22,17 @@ padding: 0;
 
 }
 .inputvelden
-{
-    padding: 70px 70px;
+{  padding: 70px 70px;
     width: 320px;
+    height: 420px;
     background: #2b2b2b;
-    color: white;
+    color: #fff;
     top: 50%;
     Left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
     box-sizing: border-box;
     font-family: arial;
-    text-align: left;
-    z-index: 2;
   }
 
 
@@ -78,16 +76,13 @@ padding: 0;
 
 
 
-.Logo
-{
+.Logo{
     width: 160px;
     height: 100px;
     border-radius: 0%;
     position: absolute;
-    top: 117.5px;
-    left: 686px;
-    z-index: 4;
-
+    top: -50px;
+    left: calc(40% - 50px);
   }
  
   input{
