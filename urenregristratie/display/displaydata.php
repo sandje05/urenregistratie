@@ -36,10 +36,9 @@ if($stmt != true ){
     
             
     while($F = $stmt->fetch()) {
-    echo $F['activity'];  echo ", ";
-    echo $F['Activity_Hour']; echo ", ";
-    echo $F['Activity_date']; echo "</br>";
-
+        echo "<p>" . $F['activity'] . ", ";
+        echo $F['Activity_Hour']. ", ";
+        echo $F['Activity_date'] . "</p><br> ";
 }
 
 }

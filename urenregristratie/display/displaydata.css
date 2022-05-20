@@ -57,3 +57,9 @@ border-radius: 0%;
 position: absolute;
 top: -50px;
 left: calc(45% - 50px);}
+
+p{
+font-family: sans-serif;
+text-align: left; 
+margin-top: 10px ;
+}
