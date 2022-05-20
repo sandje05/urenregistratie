@@ -49,9 +49,13 @@ if($stmt != true ){
 <form action="../logout.php" method="post">
 <button class="logout" type="submit"> Uitloggen </button>
 </form>
-<form action="../agenda/evenement.php">
-<button class="submit" type="submit">Event aanmaken </button>
+<form action="../display/display.php">
+<button class="submit" type="submit">Terug</button>
 </form>
+<form action="../agenda/evenement.php">
+<button class="submit" type="submit">Maak een event aan</button>
+</form>
+
 
 
 </div>
