@@ -61,6 +61,7 @@ session_start()
      </form>
     </div>
     <form action="../logout.php" method="post">
+        <input type="submit" value="logout">
     </div> 
 </div>  
 </form>
