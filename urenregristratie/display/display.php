@@ -32,6 +32,9 @@ session_start()
    }
 
 </style>
+
+<div  class="inputvelden">
+    
     <?php $level = "2";
     if($_SESSION['level'] == $level){?>
     <form action="../admin/admin.php" method="post">
@@ -40,7 +43,7 @@ session_start()
 <?php } 
 ?>
    
-    <div  class="inputvelden">
+    
            <img src="IMG/Logo_HareWare.png" class="Logo">
     <form action="../display/displaydata.php" method="post" >
     <p  class="T-Event"> Zoek hier je event </p>
@@ -54,15 +57,15 @@ session_start()
      <form 
      name="" action="../agenda/evenement.php">
         <input class="firstfield" type="submit" name="date1" value="vul hier je event in">
-     
-    
-</div>
-
      </form>
     </div>
     <form action="../logout.php" method="post">
         <input type="submit" value="logout">
     </div> 
+    
+</div>
+
+     
 </div>  
 </form>
 </body>

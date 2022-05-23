@@ -46,16 +46,13 @@ if($stmt != true ){
 
 
 <div class="buttons">
-<form action="../logout.php" method="post">
-<button class="logout" type="submit"> Uitloggen </button>
-</form>
-<form action="../display/display.php">
-<button class="submit" type="submit">Terug</button>
-</form>
-<form action="../agenda/evenement.php">
-<button class="submit" type="submit">Maak een event aan</button>
-</form>
 
+<button class="logout"><li > <a href="../display/display.php">Uitloggen</a> </li></button>
+
+<button class="submit"><li > <a href="../display/display.php">Terug naar agenda</a> </li></button>
+ <!-- href="../display/display.php" class="submit" type="submit">Terug--->
+
+ <li > <button class="Event"> <a href="../display/display.php">Maak een event aan</a> </button> </li>
 
 
 </div>

@@ -46,6 +46,16 @@ float:right;
 
 }
 
+
+
+.Event{
+
+
+
+}
+
+
+
 .submit{
 margin-top: 90px;
 
@@ -62,4 +72,18 @@ p{
 font-family: sans-serif;
 text-align: left; 
 margin-top: 10px ;
+
+}
+li{
+list-style: none;
+
+
+}
+
+a{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+
+
 }

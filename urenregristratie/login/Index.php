@@ -48,7 +48,7 @@ include '../database.php'
 </html>
 <?php
   
- 
+ // hier wordt het wachtwoord gecheckt
 $checker = "http://localhost/urenregi/urenregristratie/login/index.php";
 $checker2 =  "http://localhost/urenregi/urenregristratie/login/";
   if($_SERVER['HTTP_REFERER'] == $checker){
