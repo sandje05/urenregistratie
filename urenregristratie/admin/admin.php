@@ -106,6 +106,12 @@ color:red;
 <input type="submit" value="Level select">
       
 </form>
+
+<form action="../uren/uren.php" method="post">
+
+<input type="submit" value="uren bekijken">
+</form>
+
 <form action="../logout.php" method="post">
 
 <input type="submit" value="Logout">
