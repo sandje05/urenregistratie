@@ -12,7 +12,7 @@ align-items: center;
 
 .feld{
     padding: 70px 70px;
-    width: 650px;
+    width: 900px;
     background: #2b2b2b;
     color: white;
     top: 50%;
@@ -35,14 +35,14 @@ button{
     font-size: 16px;
     border-radius: 10px;
     margin-top: 10px;
-
+    margin-left: 55px;
 
 }
 
 .logout{
 margin-top: 90px;
 margin-right: 25px;
-float:right;
+
 
 }
 
@@ -57,7 +57,7 @@ float:right;
 
 
 .submit{
-margin-top: 90px;
+margin-right: 20px;
 
 }
 .Logo{

@@ -52,7 +52,7 @@ if($stmt != true ){
 <button class="submit"><li > <a href="../display/display.php">Terug naar agenda</a> </li></button>
  <!-- href="../display/display.php" class="submit" type="submit">Terug--->
 
- <li > <button class="Event"> <a href="../display/display.php">Maak een event aan</a> </button> </li>
+ <button class="Event"><li >  <a href="../display/display.php">Maak een event aan</a> </li></button> 
 
 
 </div>
