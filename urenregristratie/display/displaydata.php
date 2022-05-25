@@ -9,7 +9,7 @@
 </head>
 <body> 
 
-
+<button class="logout"><li > <a href="../display/display.php">Uitloggen</a> </li></button>
 <div class="feld">
 <img src="IMG/Logo_HareWare.png" class="Logo">
 
@@ -47,7 +47,7 @@ if($stmt != true ){
 
 <div class="buttons">
 
-<button class="logout"><li > <a href="../display/display.php">Uitloggen</a> </li></button>
+
 
 <button class="submit"><li > <a href="../display/display.php">Terug naar agenda</a> </li></button>
  <!-- href="../display/display.php" class="submit" type="submit">Terug--->
