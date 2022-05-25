@@ -50,7 +50,7 @@ if($stmt != true ){
 
 <div class="buttons">
 
-<button class="Event"><li >  <a href="../display/display.php">Maak een event aan</a> </li></button> 
+
 
 
 <button class="submit"><li > <a href="../display/display.php">Terug naar agenda</a> </li></button>
