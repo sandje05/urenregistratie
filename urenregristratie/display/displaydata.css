@@ -22,7 +22,7 @@ align-items: center;
     box-sizing: border-box;
     font-family: arial;
     text-align: left;
-    height: 300px;
+    height: auto;
 
 }
 
@@ -35,7 +35,7 @@ align-items: center;
     display: inline-block;
     font-size: 16px;
     border-radius: 10px;
-    margin-top: 90px;
+    margin-top: 50px;
     margin-left: 10px;
     width: 230px;
 
