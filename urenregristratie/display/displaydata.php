@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="displaydata.css">
     <title>Evenementen</title>
+   
 </head>
 <body> 
 
-<button class="logout"><li > <a href="../display/display.php">Uitloggen</a> </li></button>
+<form action="../logout.php" method="post">
+    <button class="Hidden" type="submit">logout</button>
+    </form>
 <div class="feld">
 <img src="IMG/Logo_HareWare.png" class="Logo">
 
@@ -47,14 +50,24 @@ if($stmt != true ){
 
 <div class="buttons">
 
+<button class="Event"><li >  <a href="../display/display.php">Maak een event aan</a> </li></button> 
 
 
 <button class="submit"><li > <a href="../display/display.php">Terug naar agenda</a> </li></button>
  <!-- href="../display/display.php" class="submit" type="submit">Terug--->
 
- <button class="Event"><li >  <a href="../display/display.php">Maak een event aan</a> </li></button> 
+
 
 
 </div>
+<style>
+
+    button:hover{
+    color:red     
+   
+   }
+
+</style>
+
 </body>
 </html>

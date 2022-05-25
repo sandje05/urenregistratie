@@ -12,7 +12,7 @@ align-items: center;
 
 .feld{
     padding: 70px 70px;
-    width: 900px;
+    width: 380px;
     background: #2b2b2b;
     color: white;
     top: 50%;
@@ -25,7 +25,7 @@ align-items: center;
 
 }
 
-button{
+    .buttons button{
     border: none;
     color: white;
     background-color: red;
@@ -35,7 +35,8 @@ button{
     font-size: 16px;
     border-radius: 10px;
     margin-top: 10px;
-    margin-left: 5px;
+    margin-left: 10px;
+    width: 230px;
 
 }
 
@@ -83,6 +84,28 @@ a{
     color: white;
     cursor: pointer;
     text-decoration: none;
+
+
+}
+
+
+.logout{
+
+    
+}
+.Hidden{
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-top: 5px;
+
 
 
 }
