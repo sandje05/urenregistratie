@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding:0;
+    overflow: hidden;
+    
+  }
+  /* de foto achter de inlog pagina*/
+    .background {
+     background-size: cover;
+     background-position: center;
+     font-family: sans-serif;
+     background-repeat: no-repeat;
+     height: 100vh;
+     width: 100%;
+     
+    }
+    /* de box zelf */
+    .Login{
+      padding: 70px 70px;
+      width: 320px;
+      height: 320px;
+      background: #2b2b2b;
+      color: #fff;
+      top: 50%;
+      Left: 50%;
+      position: absolute;
+      transform: translate(-50%,-50%);
+      box-sizing: border-box;
+      font-family: arial;
+    }
+  /*het logo boven de inlog box*/
+    .Logo{
+      width: 160px;
+      height: 100px;
+      border-radius: 0%;
+      position: absolute;
+      top: -50px;
+      left: calc(40% - 50px);
+    }
+   
+    /* "Inlog here"*/
+    h1{
+      margin: 0;
+      padding: 0 0 20px;
+      text-align: center;
+      font-size: 22px;
+    }
+  
+    .Login p{
+      margin: 0;
+      padding: 0;
+      font-weight: bold;
+    }
+  
+    .Login select{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+     
+    .Login input{
+        width: 100%;
+        margin-bottom: 20px;
+      }
+  /* password box */
+    .Login select
+    {
+  
+      border: none;
+      border-bottom: 1px solid #fff;
+      background: transparent;
+      outline: none;
+      height: 40px;
+      color: #fff;
+      background-color: #2b2b2b;
+      font-size: 16px;
+  
+    }
+   /* Rode LOGIN knop*/
+    .Login input[type="submit"]
+  {
+  margin-top: 20px;
+    border: none;
+    outline:none;
+    height: 40px;
+    background: #fb2525;
+    color:#fff;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  /* het hover systeem */
+   .Login input[type="submit"]:hover
+   {
+  
+    cursor: pointer;
+    background: #ffc107;
+    color:#000;
+   }
+  /* dont have a account? */
+   .Login a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+    margin-left: 20px;
+   }
+  /* hover kleurtje*/
+   .Login a:hover
+   {
+     color: #ffc107;
+   }

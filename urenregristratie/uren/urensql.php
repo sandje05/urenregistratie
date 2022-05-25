@@ -17,11 +17,7 @@ $sq = "SELECT * FROM activiteit WHERE Worker_id = ?";
 $s= $connection->prepare($sq);
 $s->execute([$ID_worker]);
 
-while($F = $s->fetch()) {
-    echo "<p>" . $F['activity'] . ", ";
-    echo $F['Activity_Hour']. ", ";
-    echo $F['Activity_date'] . "</p><br> ";
-}
+
 
 ?>
 
@@ -33,12 +29,61 @@ while($F = $s->fetch()) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
+</head> <link rel="stylesheet" href="urensql.css">
 <body>
-    <form action="../admin/admin.php" method="post">
+<div class="Background">
+<style>
+ /*hover color red  */
+a:hover {
+color: red;    
+}   
 
-    <input type="submit" value="terug">
-    </form>
+input:hover{
+color:red;
+}
+/* maken van de grijse bar */
+</style>
+<div class="topbar">
+<div>
+                <img src="IMG/Logo_HareWare.png" alt="Logo HareWare" class="Logo">
+           </div> 
+           
+           <div class="output">
+        <!-- title  -->
+        <p class="title">
+           Alle uren
+        </p>
+
+     <?php 
+            
+            while($F = $s->fetch()) {
+                echo "<h1>" . $F['activity'] . ", ";
+                echo $F['Activity_Hour']. ", ";
+                echo $F['Activity_date'] . "</h1><br> ";
+            }
+           
+        ?>
+
+
+</div>
+
+
+
+
     
+
+
+
+
+
+
+
+
+
+<form action="../admin/admin.php" method="post">
+
+    <input type="submit" value="Admin dashboard">
+    </form>
+</div>
 </body>
 </html>

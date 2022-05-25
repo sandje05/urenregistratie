@@ -10,6 +10,14 @@ include '../database.php';
     <title>Document</title>
 </head>
 <body>
+<link rel="stylesheet" href="uren.css">
+<div>
+<img src="IMG/Background-Mac.jpg" class="background">
+  </div>
+
+<div class="Login">
+<img src="IMG/Logo_HareWare.png" class="Logo">
+<h1>selecteer een persoon</h1>
     <form action="../uren/urensql.php" method="post">
     <select name="change1" id="change1">
 <?php
@@ -31,7 +39,12 @@ $q->setFetchMode(PDO::FETCH_ASSOC);
 
 ?>
 </select>
+
+
 <input type="submit" value="verder">
 </form>
+<br>
+</div>
+
 </body>
 </html>
