@@ -91,3 +91,15 @@ h1
     position: fixed;
     
    }
+   .inputvelden input[type="text"], input[type="Number"], input[type="Date"]
+   {
+ 
+     border: none;
+     border-bottom: 1px solid #fff;
+     background: transparent;
+     outline: none;
+     height: 40px;
+     color: #fff;
+     font-size: 16px;
+ 
+   }

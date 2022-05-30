@@ -20,6 +20,11 @@
     <title>Document</title>
 </head>
 <body>
+<div> <link rel="stylesheet" href="level.css">
+<img src="IMG/Background-Mac.jpg" class="background">
+  </div>
+    <div class="Login">
+    <img src="IMG/Logo_HareWare.png" class="Logo">
 <form action="../level/submit.php" method="POST">
 <select name="change2" id="change2">
 <?php include '../database.php';
@@ -56,6 +61,7 @@ $q->setFetchMode(PDO::FETCH_ASSOC);
 </select>
  <input type="submit" value="kies">
 
+</div>
 </form>
 </body>
 </html>
