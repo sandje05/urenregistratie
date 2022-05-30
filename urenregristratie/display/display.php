@@ -2,7 +2,7 @@
 include '../database.php';
 session_start()
 
-
+// hier een include voor databse connectie en ession start voor het ingelogd blijven
 
 
 
@@ -16,7 +16,7 @@ session_start()
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maak evenement aan</title>
+    <title>Thuis pagina</title>
     <link rel="stylesheet" href="display.css">
    
 </head>
@@ -29,7 +29,7 @@ session_start()
     color:red     
    
    }
-
+/* een check hieronder om te kijken of je admin bent (level 2) en als je dat bent zie je de admin button */
 </style>
     <?php $level = "2";
     if($_SESSION['level'] == $level){?>
@@ -38,7 +38,7 @@ session_start()
     </form>
 <?php } 
 ?>
-   
+   <!-- hier onder weer input velden die nodig zijn -->
     <div  class="inputvelden">
            <img src="IMG/Logo_HareWare.png" class="Logo">
     <form action="../display/displaydata.php" method="post" >
@@ -67,6 +67,7 @@ session_start()
    }
 
 </style>
+<!-- uitlog knop -->
     <form action="../logout.php" method="post">
     <button class="Hidden" type="submit">Uitloggen</button>
     </form>

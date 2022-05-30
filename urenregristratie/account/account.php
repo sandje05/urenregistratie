@@ -1,6 +1,6 @@
 <?php
 include '../database.php';
-
+// include zodat de database connectie mee komt
 
 
 
@@ -24,8 +24,8 @@ include '../database.php';
 
   <div>
 <img src="IMG/Background-Mac.jpg" class="background">
-  </div>
-
+  </div> 
+<!-- background image -->
   <div class="Login">
     <img src="IMG/Logo_HareWare.png" class="Logo">
   <h1>Maak account aan</h1>
@@ -38,10 +38,7 @@ include '../database.php';
   
   <script type="text/javascript" language="JavaScript">
       
-    //--------------------------------
-    // This code compares two fields in a form and submit it
-    // if they're the same, or not if they're different.
-    //--------------------------------
+    //kleine check met javascript om te kijken of de wachtwoorden gelijk zijn
     function checkEmail(theForm) {
       if (theForm.password.value != theForm.paswordcheck.value)
       {
@@ -71,7 +68,7 @@ include '../database.php';
     <p>Herhaal wachtwoord</p>
     <input type="password" name="paswordcheck" placeholder="Herhaal wachtwoord" required>
     <input type="submit" name="register" value="Create"  action="../login/index.php">
-    <!--<a href="#">Forgot your password?</a><br>--> 
+    
     <a href="../login/index.php">Heb je nog geen account?</a>
 
 

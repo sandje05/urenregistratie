@@ -80,7 +80,7 @@ color:red;
             echo "<h1>Achternaam = " . $r['Last_Name'] . "</h1 > ";
             echo "<h1> Gebruikersnaam = " . $r['Username'] . "</h1 ><br> ";
             }
-           
+        //    een automatische display die doorgaat todat ie alles heeft gehad
         ?>
 
 
@@ -88,15 +88,12 @@ color:red;
      
 
       
-<!-- Display de informatie  -->
 
-
-            <!-- </div>    -->
          
        
 
       
-   <!-- naar ww veranderen gaan -->
+   <!-- allemaal buttons hier onder wat leuk  -->
 <form action="../password/password.php" method="post">
 
 <input type="submit" value="Wactwoord veranderen">

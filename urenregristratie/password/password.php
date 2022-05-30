@@ -29,7 +29,7 @@
 <select name="change1" id="change1">
 <?php include '../database.php';
 
-
+// select veldje
 $sql = 'SELECT Name FROM medewerker';
 $q = $connection->prepare($sql);
 $q->execute();

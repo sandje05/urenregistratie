@@ -29,7 +29,7 @@
 <select name="change2" id="change2">
 <?php include '../database.php';
 
-
+// een standaart sql staat hier onder
 $sql = 'SELECT Name FROM medewerker';
 $q = $connection->prepare($sql);
 $q->execute();
@@ -41,7 +41,7 @@ $q->setFetchMode(PDO::FETCH_ASSOC);
 
 
       ?>  <option value ="<?php echo($r['Name']);?>"><?php echo($r['Name']);?></option>
-
+<!-- weer een display voor alles wat er is -->
 
 <?php
     }
@@ -54,6 +54,7 @@ $q->setFetchMode(PDO::FETCH_ASSOC);
 
 
 </select>
+<!-- een standaart select veld -->
 <select name="level" id="level">
 <option value="2">admin</option>
 <option value="0">medewerker</option>

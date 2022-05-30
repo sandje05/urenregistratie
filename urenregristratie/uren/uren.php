@@ -21,6 +21,7 @@ include '../database.php';
     <form action="../uren/urensql.php" method="post">
     <select name="change1" id="change1">
 <?php
+// select veldje woooooooo
 $sql = 'SELECT Name FROM medewerker';
 $q = $connection->prepare($sql);
 $q->execute();

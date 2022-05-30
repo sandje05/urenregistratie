@@ -1,6 +1,6 @@
 <?php
 include '../database.php';
-
+// super simpel sql statement en een hasher
 $name = $_POST["change1"];
 $password = $_POST["password"]; 
 

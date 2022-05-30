@@ -55,7 +55,7 @@ color:red;
         </p>
 
      <?php 
-            
+            // wow automatisch displayen blijft doorgaan todat er niks meer is
             while($F = $s->fetch()) {
                 echo "<h1>" . $F['activity'] . ", ";
                 echo $F['Activity_Hour']. ", ";
