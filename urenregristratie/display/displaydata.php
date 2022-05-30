@@ -20,6 +20,7 @@
 
 
 <?php
+$banaan = ' ["queryString"]=> string(66) "SELECT * FROM activiteit WHERE Activity_date = ? AND Worker_id = ?"';
 include '../database.php';
 session_start();
 $date1 = $_POST["date1"];
@@ -30,8 +31,8 @@ $stmt->execute([$date1, $id]); //execute om data uit database te halen
 $stmt->setFetchMode(PDO::FETCH_ASSOC);
 ?>
 
-<?php
-if($stmt != true ){
+<?php 
+if($stmt = $banaan ){
     ?> 
     
     <div class="geenactivitiet">   <?php echo "Je hebt geen activiteit vandaag! Vraag even rond of je wat kan doen.";
