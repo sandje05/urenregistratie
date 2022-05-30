@@ -34,7 +34,7 @@ session_start()
     <?php $level = "2";
     if($_SESSION['level'] == $level){?>
     <form action="../admin/admin.php" method="post">
-<button class="Hidden" type="submit"> Admin page </button>
+<button class="Hidden" type="submit"> Admin pagina </button>
     </form>
 <?php } 
 ?>
@@ -44,7 +44,7 @@ session_start()
     <form action="../display/displaydata.php" method="post" >
     <p  class="T-Event"> Zoek hier je event </p>
         <input type="date" name="date1" id="date1"> 
-        <button class="SEARCH" type="submit"> Search </button>
+        <button class="SEARCH" type="submit"> Zoeken </button>
     </form>
 
     <div class="fakebutton">
@@ -52,7 +52,7 @@ session_start()
  <div class="Login">
      <form 
      name="" action="../agenda/evenement.php">
-        <input class="firstfield" type="submit" name="date1" value="vul hier je event in">
+        <input class="firstfield" type="submit" name="date1" value="Vul hier je event in">
       </form>
     </div>
     
@@ -68,7 +68,7 @@ session_start()
 
 </style>
     <form action="../logout.php" method="post">
-    <button class="Hidden" type="submit">logout</button>
+    <button class="Hidden" type="submit">Uitloggen</button>
     </form>
     
 

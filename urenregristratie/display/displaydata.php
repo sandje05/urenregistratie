@@ -11,7 +11,7 @@
 <body> 
 
 <form action="../logout.php" method="post">
-    <button class="Hidden" type="submit">logout</button>
+    <button class="Hidden" type="submit">Uitloggen</button>
     </form>
 <div class="feld">
 <img src="IMG/Logo_HareWare.png" class="Logo">

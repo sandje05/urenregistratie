@@ -69,7 +69,7 @@ color:red;
 <div class="output">
         <!-- title  -->
         <p class="title">
-           Admin dashboard 
+           Admin pagina
         </p>
 
      <?php 
@@ -99,22 +99,22 @@ color:red;
    <!-- naar ww veranderen gaan -->
 <form action="../password/password.php" method="post">
 
-<input type="submit" value="Ww veranderen">
+<input type="submit" value="Wactwoord veranderen">
 </form>
     
 <form action="../level/level.php" method="post">
-<input type="submit" value="Level select">
+<input type="submit" value="Level selecteren">
       
 </form>
 
 <form action="../uren/uren.php" method="post">
 
-<input type="submit" value="uren bekijken">
+<input type="submit" value="Uren bekijken">
 </form>
 
 <form action="../logout.php" method="post">
 
-<input type="submit" value="Logout">
+<input type="submit" value="Uitloggen">
 </form>
         </div>
 </body >

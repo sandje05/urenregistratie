@@ -28,16 +28,16 @@ include "../database.php";
     
     <div class="inputvelden">
     <img src="IMG/Logo_HareWare.png" class="Logo">
-   <h1>Event here</h1>
+   <h1>Maak event aan </h1>
     <form method="post" action="../agenda/actionpage.php">
       
-    <label for="fname">Event:</label>
+    <label for="fname">Event naam:</label>
       <input class="firstevent" type="text" id="fname" name="fname"><br><br>
       
-      <label for="fname">Date:</label>
+      <label for="fname">Datum:</label>
       <input class="date" type="date" id="fname" name="date"><br><br>
       
-      <label for="fname">Hour:</label>
+      <label for="fname">Uur:</label>
       <input class="hour" type="number" id="fname" name="hour" max="24" min="0"><br><br>
       
       <input class="button" type="submit" value="Submit">

@@ -16,7 +16,7 @@ include '../database.php';
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Creat an account</title>
+  <title>Maak een account aan</title>
   <link rel="stylesheet" href="account.css">
 </head>
 
@@ -28,7 +28,7 @@ include '../database.php';
 
   <div class="Login">
     <img src="IMG/Logo_HareWare.png" class="Logo">
-  <h1>Create account</h1>
+  <h1>Maak account aan</h1>
   
   
   
@@ -60,19 +60,19 @@ include '../database.php';
   <form name="theForm" method="post" action="..\..\urenregristratie\account\account.php"onsubmit="return checkEmail(this);">
    
    <!--Hier maak ik de invul velden-->
-    <p>Username</p>
-    <input type="text" name="Username" placeholder="Enter Username" required>
-    <p>Name</p>
-    <input type="text" name="Name" placeholder="Enter Name" required>
-    <p>Last Name</p>
-    <input type="text" name="LastName" placeholder="Enter Last Name" required>
-    <p>Password</p>
-    <input type="password" name="password" placeholder="Enter Password" required>
-    <p>Confirm Password</p>
-    <input type="password" name="paswordcheck" placeholder="Re-Enter Password" required>
+    <p>Gebruikersnaam</p>
+    <input type="text" name="Username" placeholder="Vul gebruikersnaam in" required>
+    <p>Naam</p>
+    <input type="text" name="Name" placeholder="Vul voornaam in" required>
+    <p>Achter naam</p>
+    <input type="text" name="LastName" placeholder="Vul achter naam in" required>
+    <p>Wachtwoord</p>
+    <input type="password" name="password" placeholder="Vul wachwoord in" required>
+    <p>Herhaal wachtwoord</p>
+    <input type="password" name="paswordcheck" placeholder="Herhaal wachtwoord" required>
     <input type="submit" name="register" value="Create"  action="../login/index.php">
     <!--<a href="#">Forgot your password?</a><br>--> 
-    <a href="../login/index.php">Already have an account?</a>
+    <a href="../login/index.php">Heb je nog geen account?</a>
 
 
     

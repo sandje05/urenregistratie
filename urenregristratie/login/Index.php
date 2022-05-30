@@ -22,17 +22,17 @@ include '../database.php'
 
   <div class="Login">
     <img src="IMG/Logo_HareWare.png" class="Logo">
-  <h1>Login here</h1>
+  <h1>Login pagina</h1>
   <form method="post" action="../login/check.php">
    
    <!--Hier maak ik de invul velden-->
-    <p>Username</p>
-    <input type="text" name="user" placeholder="Enter Username">
-    <p>Password</p>
-    <input type="Password" name="wachtwoord" placeholder="Enter Password">
+    <p>Gebruikersnaam</p>
+    <input type="text" name="user" placeholder="Vul gebruikersnaam in">
+    <p>Wachtwoord</p>
+    <input type="Password" name="wachtwoord" placeholder="Vul wachwoord in ">
     <input type="submit" name="" value="Login">
     <!--<a href="#">Forgot your password?</a><br>-->
-    <a href="../account/account.php">Don't have an account?</a>
+    <a href="../account/account.php">Heb je nog geen account?</a>
 
   </form>
   </div>
