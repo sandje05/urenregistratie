@@ -42,7 +42,7 @@ session_start()
     <div  class="inputvelden">
            <img src="IMG/Logo_HareWare.png" class="Logo">
     <form action="../display/displaydata.php" method="post" >
-    <p  class="T-Event"> Zoek hier je event </p>
+    <p  class="T-Event">Zoek hier je activiteit</p>
         <input type="date" name="date1" id="date1"> 
         <button class="SEARCH" type="submit"> Zoeken </button>
     </form>
@@ -52,7 +52,7 @@ session_start()
  <div class="Login">
      <form 
      name="" action="../agenda/evenement.php">
-        <input class="firstfield" type="submit" name="date1" value="Vul hier je event in">
+        <input class="firstfield" type="submit" name="date1" value="Vul hier je activieit in">
       </form>
     </div>
     

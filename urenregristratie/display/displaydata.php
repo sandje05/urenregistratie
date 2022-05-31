@@ -20,8 +20,7 @@
 
 
 <?php
-// banaan is er voor dat ie zecht dat er niks is als er ook echt niks is
-$banaan = ' ["queryString"]=> string(66) "SELECT * FROM activiteit WHERE Activity_date = ? AND Worker_id = ?"';
+
 include '../database.php';
 session_start();
 $date1 = $_POST["date1"];
@@ -30,10 +29,12 @@ $id = $_SESSION["id"];
 $stmt = $connection->prepare("SELECT * FROM activiteit WHERE Activity_date = ? AND Worker_id = ?");
 $stmt->execute([$date1, $id]); //execute om data uit database te halen
 $stmt->setFetchMode(PDO::FETCH_ASSOC);
+$F = $stmt->fetch()
 ?>
 
 <?php 
-if($stmt = $banaan ){
+
+if($F == false){
     ?> 
     <!-- if statement om te checken of er wel iets is om te displayen -->
     <div class="geenactivitiet">   <?php echo "Je hebt geen activiteit vandaag! Vraag even rond of je wat kan doen.";

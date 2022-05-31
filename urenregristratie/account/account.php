@@ -42,7 +42,7 @@ include '../database.php';
     function checkEmail(theForm) {
       if (theForm.password.value != theForm.paswordcheck.value)
       {
-        alert('those passwords dont match');
+        alert('hey de wachtwoorden komen niet overeen');
         return false;
       } else {
         return true;
@@ -67,7 +67,7 @@ include '../database.php';
     <input type="password" name="password" placeholder="Vul wachwoord in" required>
     <p>Herhaal wachtwoord</p>
     <input type="password" name="paswordcheck" placeholder="Herhaal wachtwoord" required>
-    <input type="submit" name="register" value="Create"  action="../login/index.php">
+    <input type="submit" name="register" value="Maak je account"  action="../login/index.php">
     
     <a href="../login/index.php">Heb je nog geen account?</a>
 
