@@ -29,10 +29,10 @@ include "../database.php";
     <!-- hieronder zijn alle input velden die nodig zijn -->
     <div class="inputvelden">
     <img src="IMG/Logo_HareWare.png" class="Logo">
-   <h1>Maak event aan </h1>
+   <h1>Maak uren aan </h1>
     <form method="post" action="../agenda/actionpage.php">
       
-    <label for="fname">Event naam:</label>
+    <label for="fname">Activieit:</label>
       <input class="firstevent" type="text" id="fname" name="fname" required><br><br>
       
       <label for="fname">Datum:</label>
