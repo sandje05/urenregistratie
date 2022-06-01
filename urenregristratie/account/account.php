@@ -61,7 +61,7 @@ include '../database.php';
     <input type="text" name="Username" placeholder="Vul gebruikersnaam in" required>
     <p>Naam</p>
     <input type="text" name="Name" placeholder="Vul voornaam in" required>
-    <p>Achter naam</p>
+    <p>Achternaam</p>
     <input type="text" name="LastName" placeholder="Vul achter naam in" required>
     <p>Wachtwoord</p>
     <input type="password" name="password" placeholder="Vul wachwoord in" required>
