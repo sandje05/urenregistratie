@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 01, 2022 at 09:48 AM
+-- Generation Time: Jun 01, 2022 at 10:01 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.12
 
@@ -57,10 +57,8 @@ CREATE TABLE `medewerker` (
 --
 
 INSERT INTO `medewerker` (`ID_worker`, `Username`, `Password`, `Name`, `Last_Name`, `Level`) VALUES
-(1, 'admin', '$2y$10$UFafvbFvEzC0hAT.4T9WZeDqx0Nf9jQeHNG5i1.i4Wpy3xQ/mKajW', 'admin', 'admin', 2);
-
--- --------------------------------------------------------
-
+(1, 'admin', '$2y$10$DjTaPL47JMKNTvV1lPFXAegpyuifoWjIMyhfov1I9wLivFvxETHk6', 'admin', 'admin', 2),
+(2, 'inactief', '$2y$10$D3/xxuQGjvv156TIbEr3N.CBdgPJgIDvJndlFdZo9kH8bgOHtjbRG', 'inactief', 'inactief', 1);
 
 --
 -- Indexes for dumped tables
@@ -82,11 +80,6 @@ ALTER TABLE `medewerker`
   ADD UNIQUE KEY `Username` (`Username`);
 
 --
--- Indexes for table `project`
---
-
-
---
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -94,15 +87,14 @@ ALTER TABLE `medewerker`
 -- AUTO_INCREMENT for table `activiteit`
 --
 ALTER TABLE `activiteit`
-  MODIFY `ID_activity` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+  MODIFY `ID_activity` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `medewerker`
 --
 ALTER TABLE `medewerker`
-  MODIFY `ID_worker` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
-
-
+  MODIFY `ID_worker` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
