@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 01, 2022 at 10:01 AM
+-- Generation Time: Jun 01, 2022 at 11:45 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.12
 
@@ -32,9 +32,7 @@ CREATE TABLE `activiteit` (
   `Worker_id` int(11) NOT NULL,
   `activity` varchar(45) NOT NULL,
   `Activity_Hour` int(2) NOT NULL,
-  `Done` int(10) UNSIGNED ZEROFILL DEFAULT NULL,
-  `Activity_date` date NOT NULL,
-  `project_ ID_project` int(11) NOT NULL
+  `Activity_date` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -68,7 +66,6 @@ INSERT INTO `medewerker` (`ID_worker`, `Username`, `Password`, `Name`, `Last_Nam
 -- Indexes for table `activiteit`
 --
 ALTER TABLE `activiteit`
-  ADD PRIMARY KEY (`ID_activity`,`project_ ID_project`),
   ADD UNIQUE KEY `idactiviteit_UNIQUE` (`ID_activity`);
 
 --
